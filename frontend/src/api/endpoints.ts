@@ -44,4 +44,11 @@ export const endpoints = {
     update: (id: number, data: Partial<SampleTest>) =>
       apiClient.patch(`/sample_tests/${id}`, data),
   },
+
+  reports: {
+    sampleActivity: () => apiClient.get('/reports/sample-activity'),
+    testResults: () => apiClient.get('/reports/test-results'),
+    customerSummary: () => apiClient.get('/reports/customer-summary'),
+    instrumentStatus: () => apiClient.get('/reports/instrument-status'),
+  },
 };
