@@ -16,5 +16,6 @@
 /tmp/
 /test_login.php
 /frontend/screenshot*.cjs
+/public/screenshots/
 .idea/
 ###< lexik/jwt-authentication-bundle ###
