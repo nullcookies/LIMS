@@ -24,26 +24,12 @@ Full-stack LIMS на Symfony 6.4 + React 19 + PostgreSQL 15.
 
 ## Скриншоты
 
-### Логин
-![Login](screenshots/login.png)
-
-### Дашборд
-![Dashboard](screenshots/dashboard.png)
-
-### Образцы
-![Samples](screenshots/samples.png)
-
-### Методы тестов
-![Tests](screenshots/tests.png)
-
-### Клиенты
-![Customers](screenshots/customers.png)
-
-### Оборудование
-![Instruments](screenshots/instruments.png)
-
-### Отчёты
-![Reports](screenshots/reports.png)
+| | |
+|---|---|
+| **Логин**<br>![Login](screenshots/login.png) | **Дашборд**<br>![Dashboard](screenshots/dashboard.png) |
+| **Образцы**<br>![Samples](screenshots/samples.png) | **Методы тестов**<br>![Tests](screenshots/tests.png) |
+| **Клиенты**<br>![Customers](screenshots/customers.png) | **Оборудование**<br>![Instruments](screenshots/instruments.png) |
+| **Отчёты**<br>![Reports](screenshots/reports.png) | |
 
 ## API
 
