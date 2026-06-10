@@ -17,10 +17,12 @@ export default function LoginPage() {
     try {
       const res = await endpoints.login(email, password);
       const token = res.data.token;
+      localStorage.setItem('token', token);
       const meRes = await endpoints.me();
       setAuth(token, meRes.data);
       navigate('/');
     } catch {
+      localStorage.removeItem('token');
       setError('Invalid credentials');
     }
   };
