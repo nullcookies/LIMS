@@ -1,0 +1,17 @@
+api_platform:
+    title: LIMS API
+    version: 1.0.0
+    description: Laboratory Information Management System
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        pagination:
+            enabled: true
+            client_items_per_page: true
+            items_per_page: 50
+            maximum_items_per_page: 200
+    formats:
+        jsonld: ['application/ld+json']
+        json: ['application/json']
+        html: ['text/html']

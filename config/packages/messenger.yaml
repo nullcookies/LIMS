@@ -1,0 +1,7 @@
+framework:
+    messenger:
+        transports:
+            sync: 'sync://'
+        routing:
+            'App\Message\SampleCreatedMessage': sync
+            'App\Message\ResultApprovedMessage': sync
