@@ -75,13 +75,20 @@ https://lims.ddev.site:5174
 | `/api/users` | GET/POST | Пользователи | JWT |
 | `/health` | GET | Health check | Нет |
 | `/api/health` | GET | Health check | Нет |
+| `/api/reports/sample-activity` | GET | Образцы по дням + статусы | JWT |
+| `/api/reports/test-results` | GET | Тесты по методам + статусы | JWT |
+| `/api/reports/customer-summary` | GET | Клиенты с количеством образцов | JWT |
+| `/api/reports/instrument-status` | GET | Статус калибровки оборудования | JWT |
 
 ## Структура
 
 ```
 ├── .ddev/                    # DDEV конфигурация
 ├── src/
-│   ├── Controller/           # Контроллеры
+│   ├── Controller/
+│   │   ├── ApiController.php       # Health check
+│   │   ├── SecurityController.php  # Login / Me
+│   │   └── ReportController.php    # Analytics reports
 │   ├── Entity/               # Doctrine сущности
 │   └── Repository/           # Doctrine репозитории
 ├── config/
